@@ -1,0 +1,315 @@
+body {
+	background-color: #363635;
+	display: flex;
+	justify-content: center;
+	height: 1367px;
+
+}
+
+header {
+
+	background-color: #e5e5e5;
+	margin-top: -10px;
+	width: 375px;
+	height: 80px;
+	position: fixed;
+	top: 0px;
+	z-index: 4;
+	
+}
+
+div div p {
+	color: #e5e5e5;
+}
+
+.logo { 
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: -30px;
+
+}
+
+.hr {
+	position: relative;
+	bottom: 16px;
+	box-shadow: 0px 1px 3px ;
+	height: 1px;
+	background-color: black;
+	z-index: 3;
+
+}
+
+
+.image {
+	width: 375px;
+	height: 311px;
+	background-color: white;
+	position: relative;
+	bottom: 16px;
+	box-shadow: 0px 1px 3px;
+
+
+	
+}
+
+div img {
+	width: 100%;
+	height: 100%;
+}
+
+
+.divgrise {
+	position:  absolute;
+	background-color: #e5e5e5;
+	width: 375px;
+	height: 560px;
+	z-index: 2;
+
+
+
+
+}
+
+.nouvo {
+	display: flex;
+	justify-content: center;
+	font-family: 'patua one',cursive;
+}
+
+
+
+
+.boutonessai {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 60px;
+
+
+}
+
+.textessai {
+	background-color: #363635;
+	width: 305px;
+	height: 48px;
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0px 1px 3px;
+	font-family: 'Patua One', cursive;
+
+
+}
+
+.textessai:active {
+	background-color: #DA261A;
+}
+
+
+
+
+
+:root {
+  --rad: .7rem;
+  --dur: .3s;
+  --color-dark: #2f2f2f;
+  --color-light: #fff;
+  --color-brand: #FE9A05;
+  --font-family: 'Patua One',cursive;
+  --height: 48px;
+  --btn-width: 6rem;
+  --bez: cubic-bezier(0, 0, 0.43, 1.49);
+}
+
+form {
+  position: absolute;
+  top: 650px;
+  background: var(--color-brand);
+  border-radius: var(--rad);
+}
+
+input, button {
+  height: var(--height);
+  font-family: var(--font-fam);
+  border: 0;
+  color: var(--color-dark);
+  font-size: 1.3rem;
+}
+
+input[type="search"] {
+  outline: 0;
+  width: 100%;
+  background: var(--color-light);
+  padding: 0 1.6rem;
+  border-radius: var(--rad);
+  appearance: none;
+  transition: all var(--dur) var(--bez);
+  transition-property: width, border-radius;
+  z-index: 1;
+  position: relative;
+}
+
+button {
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--btn-width);
+  font-weight: bold;
+  font-family: 'Patua One', serif;
+  background: var(--color-brand);
+  border-radius: 0 var(--rad) var(--rad) 0;
+}
+
+input:not(:placeholder-shown) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+  + button {
+    display: block;
+  }
+}
+
+label {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.decouvrir {
+	position: absolute;
+	top: 800px;
+	height: 394px;
+	width: 280px;
+	border-radius: 25px;
+	box-shadow: 0px 1px 5px;	
+}
+
+span img {
+	width: 280px;
+	height: 394px;
+	border-radius: 25px;
+	opacity: 0.5;
+
+}
+
+.textsurimage {
+	position: relative;
+	bottom: 370px;
+	display: block;
+	text-align: center;
+	color: #e5e5e5;
+	font
+
+}
+
+.font1 {
+	font-family: 'Holtwood One SC', serif;
+	font-size: 1.3em;
+}
+
+.font2 {
+	font-family: 'Patua One', cursive;
+	font-size: 1.1em;
+}
+
+.decouvrez {
+	position: absolute;
+	right: 83px;
+	top: 255px;
+	opacity: 0.65;
+	font-size: 1.1em;
+	border-radius: 17px;
+	width: 115px;
+	height: 48px;
+	background-color: #e5e5e5;
+	box-shadow: 0px 1px 3px;
+
+}
+
+.decouvrez:active {
+	background-color: #FE9A05;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 375px;
+    height: 78px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    background-color: #363635;
+    display: flex;
+    overflow-x: auto;
+}
+
+.nav__link {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #e5e5e5;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+    font-family: 'patua one',cursive;
+
+}
+
+.nav__link:active {
+    background-color: #DA261A;
+}
+
+
+.nav__icon {
+    font-size: 18px;
+}
+
+
+nav a img {
+	width: 33px;
+	height: 33px;
+	position: relative;
+	top: 0px;
+	
+}
+
